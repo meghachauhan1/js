@@ -1,0 +1,17 @@
+JavaScript
+
+Browser run javascript (Frontend technology)
+1. We can change any thing in the html page.
+2. We can call an API to get data from database.
+3. Cannot connect to database directly (we need to use API for getting data).
+4. You don't have access to computer low level resources (e.g. Disk, CPU, RAM).
+
+
+Server run javascript (Nodejs, backend technology)
+1. You can read and write files directly to the disk.
+2. You can also have general control of CPU and RAM.
+3. You can directly connect to database and get the data. (You can use API here also).
+
+Resource to find all the html tag reference
+1. https://www.w3schools.com/tags/default.asp
+2. https://dev.w3.org/html5/html-author/ (Experience)
