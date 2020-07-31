@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+</head>
+<body>
+    <label>Number 1</label>
+    <input type="text" id="num1"><br/>
+    <label>Number 2</label>
+    <input type="text" id="num2" >
+    <!-- <button onclick="getValue()">Get Value</button> -->
+    <button onclick="addition()">+</button>
+    <button onclick="substract()">-</button>
+    <button onclick="multiply()">x</button>
+    <button onclick="division()">/</button>
+
+    <span id="result"></span>
+
+    <script>
+        /**
+         *  This is the way to fill the textbox using js
+         */
+        // let num1 = document.getElementById("num1");
+        // num1.value = "Megha";
+
+        // let num2 = document.getElementById("num2");
+        // num2.value="Amit";
+        let num1 = document.getElementById("num1");
+        let num2 = document.getElementById("num2");
+        let result  = document.getElementById("result");
+
+        function getValue(ele) {
+            return parseInt(ele.value);
+        }
+        
+
+        function addition(){
+            let val1 = getValue(num1);
+            // val1 = parseInt(val1); // Typecasting, data type change
+            // alert(typeof(val1)); this is to check the input data type
+            let val2 = getValue(num2);
+            // val2 = parseInt(val2);
+            // alert(typeof(val2));
+            let res = val1 + val2;
+            result.innerHTML = res;
+        }
+    </script>
+</body>
+</html>
